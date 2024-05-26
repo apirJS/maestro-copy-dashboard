@@ -27,7 +27,7 @@ export default function Sidebar() {
   ];
 
   return (
-    <aside className='h-full bg-primary flex items-center flex-col p-5 gap-y-5'>
+    <aside className='h-full bg-primary flex items-center flex-col py-8 px-4 gap-y-8'>
       <Image
         src='/comp_logo.png'
         alt='company logo'
