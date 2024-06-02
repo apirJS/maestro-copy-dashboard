@@ -1,6 +1,6 @@
-import { Bar } from 'react-chartjs-2';
+import { Bar } from "react-chartjs-2";
 
-export default function BarChartPemasukan() {
+export default function BarChartPengeluaran() {
   return (
     <div className='bg-primary rounded-md flex flex-col justify-center items-center gap-8 py-4 px-1 h-[max-content]'>
       <h4 className='lg:text-sm'>PEMASUKAN</h4>

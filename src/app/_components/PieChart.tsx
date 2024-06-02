@@ -1,40 +1,28 @@
 import { Pie } from 'react-chartjs-2';
 
-
-
 export default function PieChart() {
   return (
-    <div className='w-full h-full flex justify-center p-1 mt-4'>
-      <Pie
-        data={{
-          labels: ['Pemasukan', 'Pengeluaran'],
-          datasets: [
-            {
-              data: [40, 60],
-              backgroundColor: ['#0091FF', '#0072B2'],
-              hoverOffset: 4,
-            },
-          ],
-        }}
-        options={{
-          borderColor: 'transparent',
-          plugins: {
-            legend: {
-              position: 'right',
-              align: 'end',
-              fullSize: false,
-            },
+    <div className='bg-primary relative flex flex-col p-3 gap-y-3 justify-center rounded-md'>
+      <h4 className='absolute top-2 lg:text-sm'>PERSENTASE </h4>
+      <Pie data={{
+        labels: ['Pengeluaran', 'Pemasukan' ],
+        datasets: [
+          {
+            label: 'Total %',
+            data: [60, 40],
+            backgroundColor: ['#00a3ff', '#4400ff'],
+            borderColor: 'transparent',
+            offset: 12,
             datalabels: {
-              display: true,
-              color: '#ffffffcd',
               font: {
-                size: 22,
-                weight: 'bold',
+                size: 28,
+                weight: 'bolder'
               },
-            },
+              color: 'white',
+            }
           },
-          maintainAspectRatio: false,
-        }}
+        ],
+      }}
       />
     </div>
   );
