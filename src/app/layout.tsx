@@ -18,7 +18,7 @@ export default function RootLayout({
 
   return (
     <html lang='en'>
-      <body className={`${inter.className} bg-main grid grid-cols-[1fr,5fr] min-h-[100vh]`}>
+      <body className={`${inter.className} bg-main relative grid grid-cols-[1fr,5fr] min-h-[100vh]`}>
         <Sidebar />
         {children}
       </body>

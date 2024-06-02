@@ -21,3 +21,33 @@
     @apply text-white;
   }
 }
+
+#aktivitas-terkini::-webkit-scrollbar { 
+  width: 8px; 
+} 
+
+#aktivitas-terkini::-webkit-scrollbar-track {
+  background: #35353546;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+} 
+
+#aktivitas-terkini::-webkit-scrollbar-thumb {
+  background: #3b3b3b;
+  border-radius: 5px ;
+  -webkit-border-radius: 5px ;
+  -moz-border-radius: 5px ;
+  -ms-border-radius: 5px ;
+  -o-border-radius: 5px ;
+} 
+
+#aktivitas-terkini::-webkit-scrollbar-thumb:hover { 
+  background: #555; 
+} 
+
+#aktivitas-terkini::-webkit-scrollbar-button { 
+  display: none; 
+} 
