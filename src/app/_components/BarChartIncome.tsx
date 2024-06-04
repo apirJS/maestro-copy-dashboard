@@ -1,8 +1,9 @@
-import { Bar } from "react-chartjs-2";
+import { Bar } from 'react-chartjs-2';
+import DateRangeBarChart from './DateRangeBarChart';
 
-export default function BarChartPengeluaran() {
+export default function BarChartIncome() {
   return (
-    <div className='bg-primary rounded-md flex flex-col justify-center items-center gap-8 py-4 px-1 h-[max-content]'>
+    <div className='relative bg-primary rounded-md flex flex-col justify-center items-center gap-8 py-4 px-1 h-[max-content]'>
       <h4 className='lg:text-sm'>PEMASUKAN</h4>
       <Bar
         data={{
@@ -30,6 +31,7 @@ export default function BarChartPengeluaran() {
           },
         }}
       />
+      <DateRangeBarChart />
     </div>
   );
 }

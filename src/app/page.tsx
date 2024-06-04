@@ -4,10 +4,10 @@ import { Montserrat } from 'next/font/google';
 import TotalList from './_components/TotalList';
 import { dummyTotalList } from '@/dummyData';
 import PieChart from './_components/PieChart';
-import BarChartPemasukan from './_components/BarChartPemasukan';
-import BarChartPengeluaran from './_components/BarChartPengeluaran';
-import LogAktivitas from './_components/LogAktivitas';
-import HeaderLogAktivitas from './_components/HeaderLogAktivitas';
+import BarChartIncome from './_components/BarChartIncome';
+import BarChartExpense from './_components/BarChartExpense';
+import LogAktivitas from './_components/ActivityLog';
+import HeaderLogAktivitas from './_components/HeaderActivityLog';
 import { registerCharts } from '@/utils';
 
 const monsterrat = Montserrat({ subsets: ['latin'] });
@@ -24,8 +24,8 @@ export default function Dashboard() {
           <LogAktivitas />
         </div>
         <div className='grid grid-cols-2 gap-x-5 pt-8'>
-          <BarChartPemasukan />
-          <BarChartPengeluaran />
+          <BarChartIncome />
+          <BarChartExpense />
         </div>
       </section>
       <section className='grid grid-cols-1 grid-rows-[1fr,1fr,1fr,4fr] gap-y-5 '>
